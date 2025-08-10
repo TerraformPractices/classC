@@ -2,6 +2,10 @@ trigger: none
 
 pool: rg_pool
 
+variables:
+ configPath: $(RG_Service)
+ 
+
 steps: 
 - task: TerraformInstaller@1
   inputs:
